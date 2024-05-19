@@ -7,20 +7,20 @@ function Black() {
   return (
     <>
       <div className="w-full bg-[#333] relative">
-        <div className="top-layer absolute top-[-8%] sm:top-[-25px]">
+        <div className="top-layer absolute top-[-12%] sm:top-[-25px]">
           <img src="black-border.svg" alt="" />
         </div>
 
         <div className="relative">
           <img className="boom-layer" src="boom_layer.svg" alt="" />
           <img
-            className="top-layer absolute top-0"
+            className="top-layer z-30 absolute top-0"
             src="top_layer.svg"
             alt=""
           />
         </div>
 
-        <div className="font-['bebas_neue'] font-bold text-[#ffedd7] leading-[28vmax] text-[30vmax] md:text-[15vmax] md:leading-none px-4 py-12">
+        <div className="absolute z-50 bg-[#333] font-['bebas_neue'] font-bold text-[#ffedd7] leading-[28vmax] text-[30vmax] md:text-[15vmax] md:leading-none px-4 py-12">
           <h1>GIVES YOU</h1>
           <span className="flex items-center gap-6 overflow-hidden">
             WIIINGS <GiSpikyWing />
