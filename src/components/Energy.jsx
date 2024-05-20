@@ -32,10 +32,10 @@ function Black() {
           />
         </div>
 
-        <div className="bebas font-bold text-[#ffedd7] leading-[28vmax] text-[30vmax] md:text-[14vmax] md:leading-none px-4 py-12">
+        <div className="bebas md:flex md:flex-col md:items-center font-bold text-[#ffedd7] leading-[28vmax] text-[30vmax] md:text-[14vmax] md:leading-none px-4 py-12">
           <h1>GIVES YOU</h1>
           <h1 className="flex items-center gap-6 overflow-hidden">
-            WIIINGS <GiSpikyWing className="" />
+            WIIINGS <GiSpikyWing />
           </h1>
         </div>
 
