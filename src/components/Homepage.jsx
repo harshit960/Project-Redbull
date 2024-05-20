@@ -2,6 +2,7 @@ import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import React from 'react'
 import { IoCartOutline } from "react-icons/io5";
+import '../App.css';
 const Homepage = () => {
   useGSAP(()=>{
     gsap.to(".star", {
@@ -35,7 +36,7 @@ const Homepage = () => {
             </button>
           </div>
         </div>
-        <div className='text-center relative font-["Bebas_neue"] leading-[15vmax] text-[20vmax] sm:text-[12vmax] sm:leading-none font-bold mt-24 text-[#333]'>
+        <div className='main-text text-center relative bebas leading-[15vmax] text-[20vmax] sm:text-[12vmax] sm:leading-none font-bold mt-24 text-[#333]'>
           <h1>THE EXPLOSIVE</h1>
           <h1>ENERGY DRINK</h1>
         </div>

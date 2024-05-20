@@ -5,16 +5,17 @@ import { GiDiamondsSmile } from "react-icons/gi";
 import { GiSpikyWing } from "react-icons/gi";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import "../App.css";
 function Black() {
-  useGSAP(()=>{
-    gsap.to(".drinks img",{
-      x:'-120%',
-      duration:25,
-      ease:'linear',
-      repeat:-1,
-      yoyo:true
-    })
-  })
+  useGSAP(() => {
+    gsap.to(".drinks img", {
+      x: "-120%",
+      duration: 25,
+      ease: "linear",
+      repeat: -1,
+      yoyo: true,
+    });
+  });
   return (
     <>
       <div className="w-full bg-[#333] relative">
@@ -31,7 +32,7 @@ function Black() {
           />
         </div>
 
-        <div className="font-['bebas_neue'] font-bold text-[#ffedd7] leading-[28vmax] text-[30vmax] md:text-[14vmax] md:leading-none px-4 py-12">
+        <div className="bebas font-bold text-[#ffedd7] leading-[28vmax] text-[30vmax] md:text-[14vmax] md:leading-none px-4 py-12">
           <h1>GIVES YOU</h1>
           <h1 className="flex items-center gap-6 overflow-hidden">
             WIIINGS <GiSpikyWing className="" />
@@ -68,10 +69,26 @@ function Black() {
         </div>
 
         <div className="drinks px-6 left-0 z-[99] flex gap-6 overflow-x-hidden">
-          <img src="redbull-y.png" className="w-[450px] md:w-[200px] rounded-xl" alt="" />
-          <img src="redbull-r.png" className="w-[450px] md:w-[200px] rounded-xl" alt="" />
-          <img src="redbull-s.png" className="w-[450px] md:w-[200px] rounded-xl" alt="" />
-          <img src="redbull-b.png" className="w-[450px] md:w-[200px] rounded-xl" alt="" />
+          <img
+            src="redbull-y.png"
+            className="w-[450px] md:w-[200px] rounded-xl"
+            alt=""
+          />
+          <img
+            src="redbull-r.png"
+            className="w-[450px] md:w-[200px] rounded-xl"
+            alt=""
+          />
+          <img
+            src="redbull-s.png"
+            className="w-[450px] md:w-[200px] rounded-xl"
+            alt=""
+          />
+          <img
+            src="redbull-b.png"
+            className="w-[450px] md:w-[200px] rounded-xl"
+            alt=""
+          />
         </div>
       </div>
     </>
