@@ -1,7 +1,7 @@
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import React from 'react'
-
+import { IoCartOutline } from "react-icons/io5";
 const Homepage = () => {
   useGSAP(()=>{
     gsap.to(".star", {
@@ -17,7 +17,7 @@ const Homepage = () => {
   })
   return (
     <>
-      <div className="relative w-full h-[130vh] sm:h-[100vh] bg-[#ffec85] overflow-hidden">
+      <div className="relative w-full h-[130vh] sm:h-[80vh] bg-[#ffec85] overflow-hidden">
         <div>
           <img
             src="yellow-star-m.png"
@@ -26,10 +26,16 @@ const Homepage = () => {
           />
         </div>
 
-        <div className="nav p-4">
-          <img src="redbull-1.png" className="w-24 md:w-12" alt="" />
+        <div className="nav z-[999] p-4 flex justify-between">
+          <img src="redbull-1.png" className="ml-1 w-24 md:w-14" alt="" />
+          <div className="cursor-pointer">
+            <button className="flex justify-center items-center gap-1 rounded-3xl px-8 py-2 bg-[#fff] border-[1px] border-black">
+              <IoCartOutline />
+              Cart
+            </button>
+          </div>
         </div>
-        <div className='text-center relative font-["Bebas_neue"] leading-[15vmax] text-[20vmax] sm:text-[15.5vmax] font-bold mt-12 text-[#333]'>
+        <div className='text-center relative font-["Bebas_neue"] leading-[15vmax] text-[20vmax] sm:text-[12vmax] sm:leading-none font-bold mt-24 text-[#333]'>
           <h1>THE EXPLOSIVE</h1>
           <h1>ENERGY DRINK</h1>
         </div>
