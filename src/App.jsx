@@ -20,8 +20,8 @@ function App() {
       <Three />
       <Homepage />
       <Energy />
-      {/* <Flavors /> */}
-      {/* <About /> */}
+      <Flavors />
+      <About />
     </>
   )
 }
