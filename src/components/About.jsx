@@ -1,6 +1,6 @@
 import React from "react";
 import Line from "./Line";
-import '../App.css'
+import "../App.css";
 function About() {
   return (
     <>
@@ -9,8 +9,8 @@ function About() {
           <img src="black-border.svg" alt="" />
         </div>
         <div>
-          <div className="py-16 px-4 bebas leading-[110px]">
-            <h1 className="text-[#ffedd7] text-[5vmax] font-bold leading-none">
+          <div className="py-16 px-4 bebas leading-[125px]">
+            <h1 className="text-[#ffedd7] text-[5vmax] font-bold">
               INTRODUCING
             </h1>
             <h1 className="text-[#ffedd7] text-[10vmax] font-bold">
@@ -19,7 +19,7 @@ function About() {
             <h1 className="text-[#ff5959] text-[10vmax] font-bold">
               ENERGY DRINK
             </h1>
-            <Line/>
+            <Line />
           </div>
         </div>
       </div>

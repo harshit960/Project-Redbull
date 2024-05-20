@@ -11,14 +11,14 @@ function Line() {
     }`
   );
   useGSAP(() => {
-    gsap.to("svg path", {
+    gsap.to(".linekamatter path", {
       duration: 0.2,
       attr: { d: dimension },
     });
   }, [dimension]);
 
   const onLeaving = () => {
-    gsap.to("svg path", {
+    gsap.to(".linekamatter path", {
       attr: {
         d: `M 10 ${height / 2} Q ${width / 2} ${height / 2} ${width - 10} ${
           height / 2
@@ -35,19 +35,19 @@ function Line() {
         height={height}
         onMouseMove={(dets) => {
           setDimension(
-            `M 10 ${height / 2} Q ${dets.clientX} ${dets.clientY-250} ${
+            `M 10 ${height / 2} Q ${dets.clientX} ${dets.clientY - 250} ${
               width - 10
             } ${height / 2}`
           );
           // console.log(dimension);
         }}
         onMouseLeave={() => onLeaving()}
-        className="bg-transparent"
+        className="bg-transparent linekamatter"
       >
         <path
           d={`M 10 ${height / 2} Q ${width / 2} ${height / 2} ${width - 10} ${
-          height / 2
-        }`}
+            height / 2
+          }`}
           stroke="white"
           fill="transparent"
         />
